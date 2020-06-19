@@ -17,7 +17,7 @@ app.post('/projects', (request, response) => {
   ])
 })
 
-app.put('/projects:id', (request, response) => {
+app.put('/projects/:id', (request, response) => {
   return response.json([
     'project 4',
     'project 2',
@@ -25,7 +25,7 @@ app.put('/projects:id', (request, response) => {
   ])
 })
 
-app.delete('/projects:id', (request, response) => {
+app.delete('/projects/:id', (request, response) => {
   return response.json([
     'project 2',
     'project 3',
